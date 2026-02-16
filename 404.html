@@ -1,22 +1,23 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Redirecting...</title>
-  <script>
-    // SPA redirect for GitHub Pages
-    // https://github.com/rafgraph/spa-github-pages
-    var pathSegmentsToKeep = 1; // 1 for project pages (/test/)
-    var l = window.location;
-    l.replace(
-      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-      l.hash
-    );
-  </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base href="/test/">
+    <link rel="icon" href="./favicon.ico">
+    <title>Приложение</title>
+    <script defer="defer" src="./js/chunk-vendors.63370bbe.js"></script>
+    <script defer="defer" src="./js/app.ce775941.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link href="./css/chunk-vendors.10148522.css" rel="stylesheet">
+    <link href="./css/app.0ce26874.css" rel="stylesheet">
 </head>
-<body>
+
+<body><noscript><strong>We're sorry but text-page doesn't work properly without JavaScript enabled. Please enable it to
+            continue</strong></noscript>
+    <div id="app"></div>
 </body>
+
 </html>

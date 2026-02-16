@@ -5,21 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base href="/test/">
     <link rel="icon" href="./favicon.ico">
     <title>Приложение</title>
-    <script>
-      // SPA redirect restore for GitHub Pages
-      (function(l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search.slice(1).split('&').map(function(s) {
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
     <script defer="defer" src="./js/chunk-vendors.63370bbe.js"></script>
     <script defer="defer" src="./js/app.ce775941.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
